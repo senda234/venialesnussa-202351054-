@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background-color: #eda6fc; padding: 10px; text-align: center;">
+        <h1>Halaman Login</h1>
+    </header>
+
+    <nav style="background-color: #f2f5c3; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="index.html.html">Beranda</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="profil.html">Biodata</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="kontak.html">Kontak</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="login.html">Login</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+ 
+    <img src="https://c4.wallpaperflare.com/wallpaper/551/726/348/manfaat-bunga-lotus-bunga-seroja-wallpaper-preview.jpg" alt="foto profil" width="100%" height="600px" style="margin-top: 10px;">
+
+    <div style="display: flex; padding: 20px;">
+        <div style="flex: 3; padding-right: 20px;">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/flower-logo-design-template-932577cb24bf1a5f7aeed6aa43996359_screen.jpg?ts=1664792259" alt="foto profil" class="profile-pic" width="120px" height="160px" style="margin-top: 20px;">
+
+            <form id="LoginForm">
+                <fieldset>
+                    <legend>Login</legend>
+                    <p>
+                        <label>Username:</label>
+                        <input type="text" id="Username" name="Username" placeholder="Username">
+                    </p>
+                    <p>
+                        <label>Password</label>
+                        <input type="password" id="password" name="password" placeholder="password">
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="remember" value="remember">Remember me</label>
+                    </p>
+
+                    <table border="0">
+                        <tr>
+                            <td><button type="button" onclick="validateLogin();">Login</button></td>
+                            <td></td>
+                            <td><button type="button" onclick="location.href='register.html'">Register</button></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+
+        <aside style="flex: 1; background-color: #f2f5c3; padding: 10px;">
+            <h3>Alternatif Link</h3>
+            <p>Ini adalah sidebar dengan alternatif link :</p>
+            <ul>
+                <li><a href="https://unpatti.ac.id/">Website Univesitas</a></li>
+                <li><a href="https://fst.unpatti.ac.id/">Website Fakultas</a></li>
+                <li><a href="https://ilkom.fst.unpatti.ac.id/">Website Prodi</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer style="background-color: #eda6fc; padding: 10px; text-align: center;">
+        <p>&copy; 2025 venia lesnussa. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function validateLogin() {
+            var Username = document.getElementById("Username").value;
+            var password = document.getElementById("password").value;
+    
+            if (Username === "Sadam" && password === "12345") {
+                window.location.href = "https://youtu.be/ziJRTWOkuFM?si=2OvdAySxl2uuSQHL";
+            } else {
+                alert("Username atau Password salah!");
+            }
+        }
+    </script>
+</body>
+</html>
